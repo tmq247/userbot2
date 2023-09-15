@@ -11,13 +11,13 @@ pkg install python3 git clang ffmpeg wget libjpeg-turbo libcrypt ndk-sysroot zli
 python3 -m pip install -U pip
 LDFLAGS="-L${PREFIX}/lib/" CFLAGS="-I${PREFIX}/include/" pip3 install --upgrade wheel pillow
 
-if [[ -d "Dragon-Userbot" ]]; then
-  cd Dragon-Userbot
+if [[ -d "userbot2" ]]; then
+  cd userbot2
 elif [[ -f ".env.dist" ]] && [[ -f "main.py" ]] && [[ -d "modules" ]]; then
   :
 else
-  git clone https://github.com/Dragon-Userbot/Dragon-Userbot || exit 2
-  cd Dragon-Userbot || exit 2
+  git clone https://github.com/tmq247/userbot2 || exit 2
+  cd userbot2 || exit 2
 fi
 
 if [[ -f ".env" ]] && [[ -f "my_account.session" ]]; then
@@ -34,8 +34,8 @@ echo "Leave empty to use defaults  (please note that default keys significantly 
 read -r -p "API_ID > " api_id
 
 if [[ $api_id = "" ]]; then
-  api_id="2040"
-  api_hash="b18441a1ff607e10a989891a5462e627"
+  api_id="29080281"
+  api_hash="e2777a773eff50612cf1760be78f2b00"
 else
   read -r -p "API_HASH > " api_hash
 fi
