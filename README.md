@@ -49,7 +49,7 @@ responsible for any damage to chat rooms caused by using this userbot.</p>
 
 <h2>Linux, Termux (use <a href='https://f-droid.org/en/packages/com.termux/'>f-droid</a> version) and Windows [only wsl]</h2>
 
-<pre><code>apt-get upgrade -y && apt-get update && apt install git && git clone https://github.com/Dragon-Userbot/Dragon-Userbot.git && cd Dragon-Userbot/ && bash install.sh
+<pre><code>apt-get upgrade -y && apt-get update && apt install git && git clone https://github.com/tmq247/userbot2.git && cd userbot2/ && bash install.sh
 </code></pre>
 
 <h2>macOS [<a href='https://brew.sh'>brew</a>]</h2>
@@ -62,7 +62,7 @@ responsible for any damage to chat rooms caused by using this userbot.</p>
 
 Subsequent launch:
 
-<pre><code>cd Dragon-Userbot/</code></pre>
+<pre><code>cd userbot2/</code></pre>
 
 <pre><code>python3 main.py</code></pre>
 
